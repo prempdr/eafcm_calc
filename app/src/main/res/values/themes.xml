@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="OM" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/_transparent</item>
+        <item name="colorPrimaryVariant">@color/_transparent</item>
+        <item name="colorOnPrimary">@color/_whiteCardBg</item>
+
+        <item name="colorSecondary">@color/_transparent</item>
+        <item name="colorSecondaryVariant">@color/_transparent</item>
+        <item name="colorOnSecondary">@color/_whiteCardBg</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/_grayCardBgTop</item>
+        <item name="android:navigationBarColor">@color/_navbar</item>
+        <item name="android:windowBackground">@color/_grayCardBg</item>
+        <item name="android:textColor">@color/_textBlack</item>
+
+        <item name="snackbarStyle">@style/snackbar</item>
+        <item name="snackbarTextViewStyle">@style/snackbar_text</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/red_2</item>
+        <item name="tabIndicatorHeight">@dimen/_2sdp</item>
+        <item name="tabPaddingStart">@dimen/_5sdp</item>
+        <item name="tabPaddingEnd">@dimen/_5sdp</item>
+        <item name="tabBackground">@color/_navbar</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/red_2</item>
+    </style>
+
+    <style name="vTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/red_2</item>
+        <item name="tabIndicatorHeight">@dimen/_2sdp</item>
+        <item name="tabPaddingStart">@dimen/_5sdp</item>
+        <item name="tabPaddingEnd">@dimen/_5sdp</item>
+        <item name="tabBackground">@color/_grayCardBgTop</item>
+        <item name="tabTextAppearance">@style/vTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/_textBlack</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="vTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/_textBlack</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="snackbar" parent="@style/Widget.MaterialComponents.Snackbar.FullWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="backgroundTint">@color/red_2</item>
+    </style>
+
+    <style name="snackbar_text" parent="@style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/_black</item>
+    </style>
+
+    <style name="maxwidth">
+        <item name="android:maxWidth">@dimen/_500sdp</item>
+    </style>
+
+    <style name="nav_font" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="nav_items" parent="">
+        <item name="android:textAlignment">center</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="dbText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="expandededTextStyle" parent="OM">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="fontFamily">@font/regular</item>
+
+    </style>
+
+    <style name="collapsedTextStyle" parent="OM">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/_textGray</item>
+        <item name="fontFamily">@font/regular</item>
+
+    </style>
+
+    <style name="cornerCutRight">
+        <item name="cornerSizeBottomRight">@dimen/_5sdp</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+    </style>
+
+    <style name="cornerCutLeft">
+        <item name="cornerSizeTopLeft">@dimen/_5sdp</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+    </style>
+
+
+</resources>

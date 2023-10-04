@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="_transparent">@android:color/transparent</color>
+    <color name="_white">#ffffff</color>
+    <color name="_black">#000000</color>
+
+    <color name="_textBlack">#202123</color>
+    <color name="_textGray">#757575</color>
+
+    <color name="_grayCardBgTop">#e3e2e2</color>
+    <color name="_grayCardBg">#f1f1f1</color>
+    <color name="_grayCardIconBg">@color/_whiteCardBg</color>
+    <color name="_grayCardIcon">@color/_textBlack</color>
+
+    <color name="_whiteCardBg">#ffffff</color>
+    <color name="_whiteCardIconBg">@color/_grayCardBg</color>
+    <color name="_whiteCardIcon">@color/_textGray</color>
+
+    <color name="_img_brdr">@color/_textGray</color>
+    <color name="_navbar">@color/_textBlack</color>
+
+    <color name="_error">#FDD4D7</color>
+
+    <color name="grad_1">#effff9</color>
+    <color name="grad_10">#6cc4a1</color>
+    <color name="grad_2">#e0f8ef</color>
+    <color name="grad_3">#d2f2e5</color>
+    <color name="grad_4">#c3ebdc</color>
+    <color name="grad_5">#b5e5d2</color>
+    <color name="grad_6">#a6dec8</color>
+    <color name="grad_7">#98d8be</color>
+    <color name="grad_8">#89d1b5</color>
+    <color name="grad_9">#7bcbab</color>
+
+    <color name="green_1">#80c896</color>
+    <color name="green_2">#38a856</color>
+
+    <color name="icons">#e5e6e8</color>
+
+    <color name="mint_1">#cdece7</color>
+    <color name="mint_2">#08b294</color>
+
+    <color name="purple_1">#dce2fc</color>
+    <color name="purple_2">#7a90e0</color>
+
+    <color name="purple_200">#bb86fc</color>
+    <color name="purple_500">#6200ee</color>
+    <color name="purple_700">#3700b3</color>
+
+    <color name="red_1">#fad8d9</color>
+    <color name="red_2">#fb7785</color>
+    <color name="red_3">#df2d30</color>
+
+    <color name="rose_1">#fce8e5</color>
+    <color name="rose_2">#fad8d4</color>
+    <color name="rose_3">#fcacb7</color>
+
+    <color name="teal_200">#03dac5</color>
+    <color name="teal_700">#018786</color>
+
+    <color name="yellow_1">#fff8c5</color>
+    <color name="yellow_2">#eed888</color>
+    <color name="yellow_3">#f7c471</color>
+
+    <color name="white_text">#ffffff</color>
+</resources>

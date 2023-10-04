@@ -1,0 +1,5 @@
+-keepattributes LineNumberTable,SourceFile
+-renamesourcefileattribute SourceFile
+-keep class com.shockwave.**
+-keep class com.jpardogo.android.googleprogressbar.** { *; }
+-dontwarn okhttp3.internal.platform.ConscryptPlatform

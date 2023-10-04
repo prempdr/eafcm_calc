@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/_grayCardBgTop">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_grayCardBgTop">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:paddingBottom="@dimen/_50sdp"
+            app:collapsedTitleGravity="center"
+            app:collapsedTitleTextAppearance="@style/collapsedTextStyle"
+            app:contentScrim="@color/_grayCardBgTop"
+            app:expandedTitleTextAppearance="@style/expandededTextStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title=" ">
+
+            <LinearLayout
+                android:id="@+id/companyTop"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:weightSum="3"
+                app:layout_collapseMode="parallax">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/om_ovr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="?"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_3"
+                        android:textSize="@dimen/_25sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="FOR +1 TEAM OVR"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_3"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/_white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="1.5"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:text="BASE"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:text=":"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:id="@+id/txt_needed_base_with_sub"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="1.5"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:text="?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/red_3"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/_white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="1.5"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:text="RANK"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:text=":"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:id="@+id/txt_needed_rank_with_sub"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_weight="1.5"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:text="?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/red_3"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40sdp" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_minus40sdp"
+        android:background="@drawable/cardgray_topradius"
+        android:paddingTop="@dimen/_15sdp"
+        android:translationZ="999.0dip"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:backgroundTint="@color/red_1"
+                app:cardCornerRadius="@dimen/_16sdp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="FIRST TEAM"
+                    android:textAlignment="center"
+                    android:textColor="@color/red_3"
+                    android:textSize="@dimen/_10sdp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="PLAYER"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="BASE"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="RANK"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="01"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player1_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player1_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="02"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player2_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player2_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="03"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player3_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player3_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="04"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player4_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player4_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="05"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player5_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player5_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="06"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player6_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player6_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="07"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player7_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player7_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="08"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player8_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player8_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="09"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player9_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player9_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player10_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player10_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player11_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player11_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <!--   subs -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/red_1"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="SUBS COUNT -->"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_3"
+                        android:textSize="@dimen/_10sdp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_red"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp"
+                    android:tooltipText="Input Your Total SUB Players Count" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="SUB"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="BASE"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="RANK"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="01"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub1_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub1_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="02"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub2_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub2_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="03"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub3_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub3_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="04"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub4_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub4_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="05"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub5_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub5_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="06"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub6_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub6_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="07"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub7_input_base"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub7_input_rank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_gray"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_sub"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:backgroundTint="@color/yellow_3"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="CALCULATE"
+                    android:textAlignment="center"
+                    android:textColor="@color/_textBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

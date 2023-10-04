@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_white"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    tools:context=".frag.Menu">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="@dimen/_123sdp"
+        android:layout_height="@dimen/_123sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_69sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zzz_prem"
+        app:civ_border_color="@color/red_1"
+        app:civ_border_width="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:fontFamily="@font/hand"
+        android:gravity="center"
+        android:text="Prem Podder"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:textSize="@dimen/_22sdp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:fontFamily="@font/hand"
+        android:gravity="center"
+        android:text="#BangladeshUnited"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/hand"
+        android:gravity="center"
+        android:text="Follow Me"
+        android:textAlignment="center"
+        android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/link_fb"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_fb" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/link_twitter"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_twitter" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/link_linkedin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_linkedin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/link_github"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_github" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="Formula Credit @LuixenS #Twitter"
+        android:textAlignment="center"
+        android:textColor="@color/red_1"
+        android:textSize="@dimen/_9sdp" />
+
+</LinearLayout>
