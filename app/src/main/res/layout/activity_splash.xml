@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_black"
+    tools:context=".Splash">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="@dimen/_123sdp"
+        android:layout_height="@dimen/_123sdp"
+        android:layout_above="@id/title"
+        android:layout_centerHorizontal="true"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/_navbar"
+        app:civ_border_width="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/hand"
+        android:gravity="center"
+        android:text="EAFC Mobile OVR Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/green_1"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
