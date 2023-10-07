@@ -14,16 +14,18 @@ public class fragAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position) {
-            case 1:
-                return new Menu();
             case 0:
+                return new SimpleCalculator();
             default:
+            case 1:
                 return new Calculator();
+            case 2:
+                return new Menu();
         }
     }
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
 }

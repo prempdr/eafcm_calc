@@ -4,110 +4,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/_white"
+    android:background="@color/_grayCardBg"
     android:orientation="vertical"
     android:padding="@dimen/_8sdp"
     tools:context=".frag.Menu">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/photo"
-        android:layout_width="@dimen/_123sdp"
-        android:layout_height="@dimen/_123sdp"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_69sdp"
-        android:layout_marginBottom="@dimen/_16sdp"
-        android:padding="@dimen/_5sdp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/om"
-        app:civ_border_color="@color/_grayCardBg"
-        app:civ_border_width="@dimen/_3sdp" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/_white"
+        app:cardCornerRadius="@dimen/_40sdp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0sp">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/_33sdp"
-        android:fontFamily="@font/hand"
-        android:gravity="center"
-        android:text="Prem Podder"
-        android:textAlignment="center"
-        android:textSize="@dimen/_22sdp"
-        android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/_25sdp"
-        android:fontFamily="@font/hand"
-        android:gravity="center"
-        android:text="#BangladeshUnited"
-        android:textAlignment="center"
-        android:textSize="@dimen/_13sdp"
-        android:textStyle="bold" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoPM"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:src="@drawable/om"
+                app:civ_border_color="@color/_grayCardBg"
+                app:civ_border_width="@dimen/_3sdp"
+                app:layout_constraintDimensionRatio="1:0.4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/_25sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:fontFamily="@font/hand"
-        android:gravity="center"
-        android:text="Follow Me"
-        android:textAlignment="center"
-        android:textSize="@dimen/_11sdp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logoPM">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_44sdp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:fontFamily="@font/hand"
+                    android:gravity="center"
+                    android:text="Prem Podder"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_22sdp"
+                    android:textStyle="bold" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/link_fb"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/_44sdp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:padding="@dimen/_5sdp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_fb" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:fontFamily="@font/hand"
+                    android:gravity="center"
+                    android:text="#BangladeshUnited"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/link_twitter"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:padding="@dimen/_5sdp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_twitter" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/hand"
+                    android:gravity="center"
+                    android:text="Follow Me"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_11sdp" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/link_linkedin"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:padding="@dimen/_5sdp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_linkedin" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44sdp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/link_github"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:padding="@dimen/_5sdp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_github" />
-    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/link_fb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_44sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_fb" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/_25sdp"
-        android:layout_marginTop="@dimen/_69sdp"
-        android:fontFamily="@font/regular"
-        android:gravity="center"
-        android:text="Formula Credit @LuixenS #Twitter"
-        android:textAlignment="center"
-        android:textColor="@color/red_1"
-        android:textSize="@dimen/_9sdp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/link_twitter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_twitter" />
 
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/link_linkedin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_linkedin" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/link_github"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_github" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/appTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="Formula Credit @LuixenS #Twitter"
+                    android:textColor="@color/_grayCardBg"
+                    android:textSize="@dimen/_11sdp"
+                    android:translationZ="@dimen/_99sdp" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

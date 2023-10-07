@@ -1,16 +1,16 @@
 package prempdr.eafcm.ovr;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.viewpager2.widget.ViewPager2;
-
-import prempdr.eafcm.ovr.frag.fragAdapter;
-
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
 import com.google.android.material.tabs.TabLayout;
+
+import prempdr.eafcm.ovr.frag.fragAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,6 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 tabLayout.getTabAt(position).select();
             }
         });
-        viewPager.setCurrentItem(0);
+        viewPager.setCurrentItem(1);
     }
 }
